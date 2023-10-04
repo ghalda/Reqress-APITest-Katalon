@@ -19,5 +19,5 @@ import org.openqa.selenium.Keys as Keys
 
 postRegisterUserResponse = WS.sendRequest(findTestObject('POST - Register User', [('userEmail') : GlobalVariable.userEmail]))
 
-WS.verifyResponseStatusCode(postRegisterUserResponse, 201)
+WS.verifyResponseStatusCode(postRegisterUserResponse, 200)
 
